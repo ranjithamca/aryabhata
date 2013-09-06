@@ -10,35 +10,43 @@
 
 
 	<div class="timer-container row-fluid">
-		<div class="span2"></div>
-		<div class="span8">
+		<div class="span1"></div>
+
 			<div class="timer">
 				<span class="days"></span> DAYS <span class="hours"></span> HOURS <span class="minutes"></span> MINUTES <span class="seconds"></span> SECONDS
 			</div>
-<!--
-								<div class="span6 animated fadeInDownBig">
+
+								<div class="span5 animated fadeInDownBig">
 									<p>
 										<iframe width="420" height="315" src="//www.youtube.com/embed/QcXkpZ1-O7Q" frameborder="0" allowfullscreen>
 										
 										</iframe>										
 									</p>
-								</div> -->
+								</div> 
 
+		<div class="span4">
 			<p>
-Code to your Cloud. {Java, Play(Scala), Ruby on Rails, Node.js  with a Multi-tenant data sore, Queue}
+
+Code to your Cloud. {Java, Play(Scala), Ruby on Rails, Node.js  with a Multi-tenant data store, Queue}
 Metrics, Monitoring, Realtime logs all in a bundle... 
 <br/>
 <br/>
+<!--
 Launch includes ability to set up cloud identity and dumping stuff using our Cloud App Connector API.
 Built on top of Opscode - Chef using Scala/Akka. 
 <br/>
 <br/>
-Avail it for free when we launch. Enter your email in the text box.
-			</p>
+Avail it for free when we launch. --> 
+<%= text_field_tag 'email', nil, :placeholder => 'Subscribe for Beta Invite' %>
+		<%= render :partial => "home/setup_mail"%>
+			</p></div>
+
+
+
 		</div>
 
-		<div class="span2"></div>
-	</div>
+		<div class="span1"></div>
+
 
 
 	<div class="social-container row-fluid">
@@ -56,10 +64,7 @@ Avail it for free when we launch. Enter your email in the text box.
 		<div class="span2"></div>
 	</div>
 
-	<div class="subscription-form-container row-fluid">
-		<h2 id="megam-subscribe">Subscribe</h2>
-		<%= render :partial => "home/setup_mail"%>
-	</div>
+
 	<!-- Button to trigger modal -->
 	<!-- Modal -->
 	<div id="postfinish_popup" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
