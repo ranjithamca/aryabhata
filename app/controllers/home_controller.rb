@@ -9,7 +9,8 @@ class HomeController < ApplicationController
 
    #@email = params[:email]
     logger.debug "email address : #{params.inspect}"
-   Gibbon.new.list_subscribe(:id => "7a632d9ce0", :email_address => params[:email])
+    gb = Gibbon::API.new
+    gb.lists.subscribe({:id => "7a632d9ce0", :email => {:email => params[:email]}})
     respond_to do |format|
       format.html { redirect_to root_path } #for my controller, i wanted it to be JS only
       format.js

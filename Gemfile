@@ -10,6 +10,8 @@ gem 'rails-observers'
 gem 'actionpack-page_caching'
 gem 'actionpack-action_caching'
 gem 'unicorn'
+gem 'rails_12factor'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
