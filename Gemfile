@@ -1,3 +1,4 @@
+#ruby '2.0.0'
 source 'https://rubygems.org'
 
 gem "rails", "~> 4.0.0"
@@ -10,7 +11,7 @@ gem 'rails-observers'
 gem 'actionpack-page_caching'
 gem 'actionpack-action_caching'
 gem 'unicorn'
-gem 'rails_12factor'
+#gem 'rails_12factor'
 
 
 # Gems used only for assets and not required
